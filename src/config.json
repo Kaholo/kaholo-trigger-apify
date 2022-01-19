@@ -1,0 +1,47 @@
+{
+  "name": "Apify-Trigger",
+  "type": "trigger",
+  "execProgram": "node",
+  "main": "app.js",
+  "imgUrl": "logo.png",
+  "version": "1.0.0",
+  "description": "Handles Apify webhooks",
+  "methods": [
+    {
+      "name": "webhookProcess",
+      "route": "post /webhook/apify/process",
+      "viewName": "Run Created",
+      "params": []
+    },
+    {
+      "name": "webhookProcess",
+      "route": "post /webhook/apify/process",
+      "viewName": "Run Succeeded",
+      "params": []
+    },
+    {
+      "name": "webhookProcess",
+      "route": "post /webhook/apify/process",
+      "viewName": "Run Failed",
+      "params": []
+    },
+    {
+      "name": "webhookProcess",
+      "route": "post /webhook/apify/process",
+      "viewName": "Run Timed Out",
+      "params": []
+    },
+    {
+      "name": "webhookProcess",
+      "route": "post /webhook/apify/process",
+      "viewName": "Run Aborted",
+      "params": []
+    },
+    {
+      "name": "webhookProcess",
+      "route": "post /webhook/apify/process",
+      "viewName": "Run Resurrected",
+      "params": []
+    }
+  ]
+}
