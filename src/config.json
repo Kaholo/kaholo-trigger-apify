@@ -8,37 +8,37 @@
   "description": "Handles Apify webhooks",
   "methods": [
     {
-      "name": "webhookProcess",
+      "name": "runCreated",
       "route": "post /webhook/apify/process",
       "viewName": "Run Created",
       "params": []
     },
     {
-      "name": "webhookProcess",
+      "name": "runSuccessed",
       "route": "post /webhook/apify/process",
       "viewName": "Run Succeeded",
       "params": []
     },
     {
-      "name": "webhookProcess",
+      "name": "runFailed",
       "route": "post /webhook/apify/process",
       "viewName": "Run Failed",
       "params": []
     },
     {
-      "name": "webhookProcess",
+      "name": "runAborted",
       "route": "post /webhook/apify/process",
       "viewName": "Run Timed Out",
       "params": []
     },
     {
-      "name": "webhookProcess",
+      "name": "runTimedout",
       "route": "post /webhook/apify/process",
       "viewName": "Run Aborted",
       "params": []
     },
     {
-      "name": "webhookProcess",
+      "name": "runResurrected",
       "route": "post /webhook/apify/process",
       "viewName": "Run Resurrected",
       "params": []
