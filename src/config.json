@@ -28,13 +28,13 @@
     {
       "name": "runAborted",
       "route": "post /webhook/apify/process",
-      "viewName": "Run Timed Out",
+      "viewName": "Run Aborted",
       "params": []
     },
     {
       "name": "runTimedout",
       "route": "post /webhook/apify/process",
-      "viewName": "Run Aborted",
+      "viewName": "Run Timedout",
       "params": []
     },
     {
