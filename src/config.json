@@ -8,40 +8,42 @@
   "description": "Handles Apify webhooks",
   "methods": [
     {
-      "name": "runCreated",
+      "name": "processWebhook",
       "route": "post /webhook/apify/process",
-      "viewName": "Run Created",
-      "params": []
-    },
-    {
-      "name": "runSuccessed",
-      "route": "post /webhook/apify/process",
-      "viewName": "Run Succeeded",
-      "params": []
-    },
-    {
-      "name": "runFailed",
-      "route": "post /webhook/apify/process",
-      "viewName": "Run Failed",
-      "params": []
-    },
-    {
-      "name": "runAborted",
-      "route": "post /webhook/apify/process",
-      "viewName": "Run Aborted",
-      "params": []
-    },
-    {
-      "name": "runTimedout",
-      "route": "post /webhook/apify/process",
-      "viewName": "Run Timedout",
-      "params": []
-    },
-    {
-      "name": "runResurrected",
-      "route": "post /webhook/apify/process",
-      "viewName": "Run Resurrected",
-      "params": []
+      "viewName": "Apify webhook",
+      "params": [
+        {
+          "name": "actionType",
+          "viewName": "Trigger on action",
+          "type": "options",
+          "options": [
+            {
+              "id": "ACTOR.RUN.CREATED",
+              "name": "Run Created"
+            },
+            {
+              "id": "ACTOR.RUN.SUCCEEDED",
+              "name": "Run Succeeded"
+            },
+            {
+              "id": "ACTOR.RUN.FAILED",
+              "name": "Run Failed"
+            },
+            {
+              "id": "ACTOR.RUN.ABORTED",
+              "name": "Run Aborted"
+            },
+            {
+              "id": "ACTOR.RUN.TIMED_OUT",
+              "name": "Run Timedout"
+            },
+            {
+              "id": "ACTOR.RUN.RESURRECTED",
+              "name": "Run Resurrected"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
